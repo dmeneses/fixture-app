@@ -1,0 +1,11 @@
+<div *ngIf="game">
+  <h1>Selected Game</h1>
+  <p>
+    {{game.teamName1}} vs {{game.teamName2}}
+  </p>
+  <p>
+  <button (click)="onIncrement()">+</button>
+  {{game.teamScore1}} - {{game.teamScore2}}
+  <button (click)="onIncrement(true)">+</button>
+  </p>
+</div>
